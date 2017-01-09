@@ -1,10 +1,13 @@
-Stouts.rabbitmq
+albertomurillo.rabbitmq
 ===============
 
 [![Build Status](http://img.shields.io/travis/Stouts/Stouts.rabbitmq.svg?style=flat-square)](https://travis-ci.org/Stouts/Stouts.rabbitmq)
 [![Galaxy](http://img.shields.io/badge/galaxy-Stouts.rabbitmq-blue.svg?style=flat-square)](https://galaxy.ansible.com/list#/roles/953)
 
 Ansible role which manage RabbitMQ.
+This is a fork from [Stouts.rabbitmq](https://github.com/Stouts/Stouts.rabbitmq)
+but installs rabbitmq and erlang from `@centos-openstack-newton` repository
+(Useful when installing rabbitmq and OpenStack on the same node)
 
 #### Variables
 
@@ -31,7 +34,7 @@ rabbitmq_users_remove:                  # Ensure the users removed
 
 #### Usage
 
-Add `Stouts.rabbitmq` to your roles and set vars in your playbook file.
+Add `albertomurillo.rabbitmq` to your roles and set vars in your playbook file.
 
 Example:
 
@@ -40,7 +43,7 @@ Example:
 - hosts: all
 
   roles:
-    - Stouts.rabbitmq
+    - albertomurillo.rabbitmq
 
   vars:
     rabbitmq_vhosts: [myhost]
@@ -52,4 +55,4 @@ Licensed under the MIT License. See the LICENSE file for details.
 
 #### Feedback, bug-reports, requests, ...
 
-Are [welcome](https://github.com/Stouts/Stouts.rabbitmq/issues)!
+Are [welcome](https://github.com/albertomurillo/ansible-role-rabbitmq/issues)!
