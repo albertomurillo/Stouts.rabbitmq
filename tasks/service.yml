@@ -27,6 +27,8 @@
       vhost={{item.vhost|default('/')}}
       tags={{item.tags|default('')}}
   with_items: "{{rabbitmq_users}}"
+  loop_control:
+    label: "{{ item.user }}"
 
 - name: Symlink RabbitMQ bin to sbin
   file: state=link src=/usr/lib/rabbitmq/bin dest=/usr/lib/rabbitmq/sbin
