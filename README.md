@@ -6,7 +6,7 @@ albertomurillo.rabbitmq
 
 Ansible role which manage RabbitMQ.
 This is a fork from [Stouts.rabbitmq](https://github.com/Stouts/Stouts.rabbitmq)
-but installs rabbitmq and erlang from `@centos-openstack-newton` repository
+but installs rabbitmq and erlang from `@centos-openstack-rocky` repository
 (Useful when installing rabbitmq and OpenStack on the same node)
 
 #### Variables

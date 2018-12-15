@@ -1,7 +1,7 @@
 ---
 
-- name: Install centos-release-openstack-newton
-  yum: name=centos-release-openstack-newton state=present
+- name: Install centos-release-openstack-rocky
+  yum: name=centos-release-openstack-rocky state=present
 
 - name: Install RabbitMQ
   yum: name=rabbitmq-server
